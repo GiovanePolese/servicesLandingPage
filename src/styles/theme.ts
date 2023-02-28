@@ -1,6 +1,4 @@
-import  { DefaultTheme } from 'styled-components';
-
-export const defaultTheme: DefaultTheme = {
+export const defaultTheme = {
   colors:{
     white: '#ffffff',
     black: '#222831',
@@ -12,5 +10,15 @@ export const defaultTheme: DefaultTheme = {
     },
     backgroundColor: '#151719',
     borderColor: '#33363a'
+  },
+  fonts:{
+    size: {
+      xsmall: '1rem',
+      small: '1.2rem',
+      medium: '1.5rem',
+      large: '1.8rem',
+      xlarge: '2.2rem',
+      xxlarge: '2.5rem'
+    }
   }
 }
