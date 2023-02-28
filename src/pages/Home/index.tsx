@@ -10,6 +10,7 @@ import { SectionDepositions } from "../../components/SectionDepositions";
 import { SectionFaq } from "../../components/SectionFaq";
 
 import * as S from "../../styles/styles"
+import { ModalForm } from "../../components/ModalForm";
 
 export const Home = () => {
   return (
@@ -19,6 +20,7 @@ export const Home = () => {
       <S.Sections>
         <S.Container>
           <SectionIntroduction />
+          <ModalForm />
           <SectionDescription />
           <SectionDepositions />
           <SectionFaq />

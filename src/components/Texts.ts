@@ -19,22 +19,22 @@ export const Texts = {
 		button: 'Conheça os pacotes'
 	},
 	description: {
-		title: 'Apresente seu negócio',
-		subtitle: 'Mostre o quão valiosa sua marca pode ser com um storytelling que grude a atenção dos seus clientes. Tornando seus produtos irresistíveis.',
+		title: 'Nossos serviços',
+		subtitle: 'Trabalhamos cuidando de toda estratégia de marketing',
 		icons: [
 			{
 				img: '/images/iconHD.svg',
-				name: 'Vídeos em FullHD',
+				name: 'Criação de Landing Page',
 				description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.',
 			},
 			{
 				img: '/images/iconSlow.svg',
-				name: 'Slow Motion',
+				name: 'Produção de Criativos',
 				description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.',
 			},
 			{
 				img: '/images/iconHD.SVG',
-				name: 'Instant Features',
+				name: 'Gerenciamento de anúncios',
 				description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.',
 			},
 		],
@@ -90,15 +90,15 @@ export const Texts = {
 	},
 	faq: [
 		{
-			question: 'Pergunta 1',
+			question: 'Quais são as formas de pagamento?',
 			answer: 'Resposta 1'
 		},
 		{
-			question: 'Pergunta 2',
+			question: 'Qual o valor?',
 			answer: 'Resposta 2'
 		},
 		{
-			question: 'Pergunta 3',
+			question: 'Preciso ter Hospedagem e Domínio?',
 			answer: 'Resposta 3'
 		},
 	]

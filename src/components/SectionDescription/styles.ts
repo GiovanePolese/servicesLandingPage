@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
   width: 100%;
-  height: 100vh;
   background-color: #151717;
   display: flex;
   justify-content: center;
@@ -10,11 +9,6 @@ export const Wrapper = styled.section`
 
   @media (max-width: 768px) {
     margin-top: 50px;
-    height: fit-content;
-  }
-  
-  @media (min-width: 768px) {
-    height: 100vh;
   }
 `
 
