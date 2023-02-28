@@ -18,7 +18,7 @@ npm run dev
 ```
 
 ## Padrões de conteúdo
-Os conteúdos devem ser atualizados diretamente no aquivo Tests.ts, que contém todas as informações de textos e links das seções
+Os conteúdos devem ser atualizados diretamente no aquivo Texts.ts, que contém todas as informações de textos e links das seções
 
 ## Cores e temas
 Todas as cores devem estar no arquivo de temas `theme.ts` dentro de `./pages/styles`

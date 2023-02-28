@@ -7,11 +7,13 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
+  body, input, textarea, button {
     font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: ${props => props.theme.fonts.size.small};
   }
 
   a {
-    text-decoration: inherit
+    text-decoration: inherit;
   }
 `
