@@ -19,3 +19,29 @@ npm run dev
 
 ## Padrões de conteúdo
 Os conteúdos devem ser atualizados diretamente no aquivo Tests.ts, que contém todas as informações de textos e links das seções
+
+## Cores e temas
+Todas as cores devem estar no arquivo de temas `theme.ts` dentro de `./pages/styles`
+Exemplo:
+```js
+export const defaultTheme: DefaultTheme = {
+  colors:{
+    primary:'#5d5dff',
+    textColor: {
+      primary: '#d9e3ea',
+    },
+    backgroundColor: '#151719',
+  }
+}
+```
+
+Para utilizar basta utilizar a seguinte linha de comando nos componentes de estilo
+```js
+${props => props.theme.colors.<sua cor>}
+```
+Exemplo
+```css
+{
+  border: 1px solid ${props => props.theme.colors.borderColor};
+}
+```
