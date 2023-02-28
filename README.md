@@ -1,26 +1,36 @@
 # Landing Page padrão de Marketing
 
-## Como rodar na sua máquina
+## | Como rodar na sua máquina
 
-Baixe o repositório na sua máquina
+### Baixe o repositório na sua máquina
 ```bash
 git clone https://github.com/GiovanePolese/servicesLandingPage.git
 ```
 
-Baixe as dependências
+### Baixe as dependências
 ```bash
 npm install
 ```
 
-Rode o projeto localmente
+### Rode o projeto localmente
 ```bash
 npm run dev
 ```
 
-## Padrões de conteúdo
+### Instale a extensão do ESLint oficial da Microsoft
+
+### Verifique seu arquivo de configurações apertando ctrl+P e digite >json
+```js
+"editor.codeActionsOnSave": {
+  // necessário conter a linha abaixo para salvar automaticamente as alterações do ESLint
+  "source.fixAll.eslint": true,
+},
+```
+
+## | Padrões de conteúdo
 Os conteúdos devem ser atualizados diretamente no aquivo Texts.ts, que contém todas as informações de textos e links das seções
 
-## Cores e temas
+## | Cores e temas
 Todas as cores devem estar no arquivo de temas `theme.ts` dentro de `./pages/styles`
 Exemplo:
 ```js
