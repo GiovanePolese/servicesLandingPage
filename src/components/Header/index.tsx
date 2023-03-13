@@ -1,11 +1,15 @@
-import * as S from "./styles"
-import { useEffect, useState } from "react"
-import { Texts } from "../Texts";
+import * as S from './styles'
+import { Turn as Hamburger } from 'hamburger-react'
+import { useContext, useEffect, useState } from 'react'
+import { Texts } from '../Texts'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { SideMenuContext } from '../../contexts/SideMenuContext'
 
 export const Header = () => {
   const [color, setColor] = useState(false)
   const [active, setActive] = useState('introduction')
+  const { sideMenuIsOpen } = useContext(SideMenuContext)
+  const { setSideMenuOpen } = useContext(SideMenuContext)
 
   useEffect(function mount() {
     const changeColor = () => {
@@ -33,24 +37,32 @@ export const Header = () => {
     })
 
     return function unMount() {
-      window.removeEventListener('scroll', changeColor);
-    };
-  });
+      window.removeEventListener('scroll', changeColor)
+    }
+  })
 
   return (
     <S.Wrapper className={color ? 'dark' : ''}>
       <img src="/images/logo_branca.png" alt="logo Giovane Polese branca" />
       <S.Buttons>
         {Texts.header.map((item, index) => (
-          <AnchorLink 
+          <AnchorLink
             href={'#' + item.link}
-            className={item.link == active ? 'active' : ''}
+            className={item.link === active ? 'active' : ''}
             key={index}
           >
             {item.name}
           </AnchorLink>
         ))}
       </S.Buttons>
+
+      <S.BurguerDiv>
+        <Hamburger
+          toggled={sideMenuIsOpen}
+          toggle={setSideMenuOpen}
+          color="white"
+        />
+      </S.BurguerDiv>
     </S.Wrapper>
   )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   .faq__desc.show-description {
@@ -28,7 +28,6 @@ export const Wrapper = styled.div`
     border-radius: 23px;
     display: flex;
   }
-
 
   .faq {
     width: 100%;
@@ -116,14 +115,13 @@ export const Wrapper = styled.div`
     }
   }
 
-
-  @media only screen and (max-width: 800px) {
+  @media (max-width: 800px) {
     .illustration__woman-desktop {
       max-width: 120%;
     }
   }
 
-  @media only screen and (max-width: 700px) {
+  @media (max-width: 700px) {
     .container {
       /* added padding here to mobile container,
       so illustration__woman-desctop would not be cropped at the top */

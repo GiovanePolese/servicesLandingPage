@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
   padding-top: 100px;
 
   @media (max-width: 768px) {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 `
 
@@ -31,6 +31,10 @@ export const Main = styled.div`
     margin-bottom: 40px;
   }
 
+  strong {
+    color: ${(props) => props.theme.colors.secodary};
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -47,7 +51,6 @@ export const Main = styled.div`
       font-size: 1.4rem;
       margin-bottom: 20px;
     }
-
   }
 `
 
@@ -56,7 +59,6 @@ export const ImageHeader = styled.div`
   top: -95px;
   right: 0;
   z-index: 0;
-
 `
 
 export const ImageMain = styled.div`
@@ -73,7 +75,6 @@ export const ImageMain = styled.div`
     left: -99px;
     top: 293px;
     transform: scale(0.6);
-
   }
 `
 
@@ -99,11 +100,11 @@ export const ContainerButton = styled.div`
     gap: 50px;
 
     iframe {
-    margin-top: 24px;
-    z-index: 2;
-    width: 100%;
-    max-height: 300px;
-    min-height: 200px;
-  }
+      margin-top: 24px;
+      z-index: 2;
+      width: 100%;
+      max-height: 300px;
+      min-height: 200px;
+    }
   }
 `

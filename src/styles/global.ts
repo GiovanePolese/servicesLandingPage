@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -10,7 +10,7 @@ export default createGlobalStyle`
   body, input, textarea, button {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: ${props => props.theme.fonts.size.small};
+    font-size: ${(props) => props.theme.fonts.size.small};
   }
 
   a {

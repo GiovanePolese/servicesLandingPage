@@ -1,22 +1,28 @@
-import GlobalStyle from "../../styles/global";
+import GlobalStyle from '../../styles/global'
 
-import  { ThemeProvider } from 'styled-components';
-import { defaultTheme } from "../../styles/theme";
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from '../../styles/theme'
 
-import { Header } from "../../components/Header";
-import { SectionIntroduction } from "../../components/SectionIntroduction";
-import { SectionDescription } from "../../components/SectionDescription";
-import { SectionDepositions } from "../../components/SectionDepositions";
-import { SectionFaq } from "../../components/SectionFaq";
+import { SectionIntroduction } from '../../components/SectionIntroduction'
+import { SectionDescription } from '../../components/SectionDescription'
+import { SectionDepositions } from '../../components/SectionDepositions'
+import { SectionFaq } from '../../components/SectionFaq'
 
-import * as S from "../../styles/styles"
-import { ModalForm } from "../../components/ModalForm";
+import { SideMenuContextProvider } from '../../contexts/SideMenuContext'
+
+import * as S from '../../styles/styles'
+import { Header } from '../../components/Header'
+import { SideMenu } from '../../components/SideMenu'
+import { ModalForm } from '../../components/ModalForm'
 
 export const Home = () => {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-      <Header />
+      <SideMenuContextProvider>
+        <Header />
+        <SideMenu />
+      </SideMenuContextProvider>
       <S.Sections>
         <S.Container>
           <SectionIntroduction />

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Wrapper = styled.section`
   width: 100%;
@@ -8,7 +8,7 @@ export const Wrapper = styled.section`
 
   @media (max-width: 768px) {
     margin-top: 50px;
-  } 
+  }
 `
 
 export const Main = styled.div`
@@ -16,14 +16,13 @@ export const Main = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-
 `
 
 export const Assessments = styled.p`
-  color: #36A269;
+  color: #36a269;
   font-size: 1.4rem;
   font-weight: 500;
-  background-color: #C6F6D5;
+  background-color: #c6f6d5;
   padding: 5px 25px;
   border-radius: 15px;
   box-shadow: 0px 1px 3px;
@@ -31,22 +30,22 @@ export const Assessments = styled.p`
 `
 
 export const Text = styled.div`
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- text-align: center;
- gap: 20px;
- margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 80px;
 
- h2 {
-    color: #D9E3EA;
+  h2 {
+    color: #d9e3ea;
     font-size: 3.6rem;
     width: 100%;
   }
 
   p {
-    color: #9BA9B4;
+    color: #9ba9b4;
     font-size: 1.8rem;
     width: 80%;
   }
@@ -55,13 +54,13 @@ export const Text = styled.div`
     gap: 16px;
 
     h2 {
-    font-size: 2.6rem;
-  }
+      font-size: 2.6rem;
+    }
 
-  p {
-    color: #9BA9B4;
-    font-size: 1.4rem; 
-  }
+    p {
+      color: #9ba9b4;
+      font-size: 1.4rem;
+    }
   }
 `
 
@@ -83,7 +82,7 @@ export const Cards = styled.div`
 
   &.mobile {
     display: none;
-    
+
     @media (max-width: 768px) {
       display: flex;
     }
@@ -93,7 +92,6 @@ export const Cards = styled.div`
     max-width: 400px;
     width: 95%;
   }
-
 `
 
 export const Card = styled.div`
@@ -102,13 +100,13 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #25282C;
+  background-color: #25282c;
   gap: 16px;
   text-align: end;
   padding: 28px 40px;
 
   .video {
-    width:100%;
+    width: 100%;
     height: 180px;
   }
 
@@ -120,45 +118,45 @@ export const Card = styled.div`
     padding: 20px 22px;
     gap: 12px;
   }
-  `
+`
 
-  export const Photo = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
+export const Photo = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
 
+  img {
+    max-width: 50px;
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+
+  &:after {
+    content: ' ';
+    width: 22px;
+    height: 19px;
+    background: url('/images/aspasAzuis.svg') no-repeat;
+    position: absolute;
+    top: 24px;
+    left: 78px;
+    display: inline-block;
+  }
+
+  @media (max-width: 768px) {
     img {
-      max-width: 50px;
-      min-width: 50px;
-      width: 50px;
-      height: 50px;
-      min-height: 50px;
-      max-height: 50px;
-    }
-
-    &:after {
-      content: " ";
-      width: 22px;
-      height: 19px;
-      background: url('/images/aspasAzuis.svg') no-repeat;
-      position: absolute;
-      top: 24px;
-      left: 78px;
-      display: inline-block;
-    }
-
-    @media (max-width: 768px) {
-      img {
       max-width: 35px;
       min-width: 35px;
       width: 35px;
       height: 35px;
       min-height: 35px;
       max-height: 35px;
-      }
+    }
 
-      &:after {
-      content: " ";
+    &:after {
+      content: ' ';
       width: 18px;
       height: 15px;
       background: url('/images/aspasMobile.svg') no-repeat;
@@ -167,11 +165,11 @@ export const Card = styled.div`
       left: 50px;
       display: inline-block;
     }
-    }
-  `
+  }
+`
 
 export const Border = styled.div`
-  border: 1px solid #33363A;
+  border: 1px solid #33363a;
   width: 100%;
   height: 0;
   margin-bottom: 14px;
@@ -190,12 +188,12 @@ export const TextCard = styled.div`
 
   p {
     font-weight: 400;
-    color: #D9E3EA;
+    color: #d9e3ea;
   }
 
   span {
     font-weight: 600;
-    color: #5D5DFF;
+    color: #5d5dff;
   }
 
   @media (max-width: 768px) {
