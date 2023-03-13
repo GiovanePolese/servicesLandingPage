@@ -10,8 +10,8 @@ export const Button = styled.div`
     font-weight: 700;
     color: white;
     border: none;
-    border-radius: 2px;
-    padding: 13px 73px 13px 73px;
+    border-radius: 30px;
+    padding: 15px 77px 15px 77px;
     cursor: pointer;
     transition: background-color 0.3s;
   }

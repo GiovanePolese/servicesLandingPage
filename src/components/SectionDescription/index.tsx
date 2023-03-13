@@ -15,7 +15,7 @@ export const SectionDescription = () => {
             {Texts.description.icons.map((icon: descriptionIcon, index: number) => (
               <S.Card key={index}>
                 <S.CardImage>
-                  <img src={icon.img} alt="icone HD" />
+                  <img src={icon.img} alt="icone" />
                 </S.CardImage>
                 <h3>{icon.name}</h3>
                 <p>{icon.description}</p>

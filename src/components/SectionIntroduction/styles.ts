@@ -10,10 +10,6 @@ export const Wrapper = styled.section`
   @media (max-width: 768px) {
     margin-top: 80px;
   }
-
-  @media (min-width: 768px) {
-    height: 100vh;
-  }
 `
 
 export const Main = styled.div`
