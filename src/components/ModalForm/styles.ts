@@ -1,15 +1,61 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.section`
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  background-color: ${(props) => props.theme.colors.backgroundColor};
+  height: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  align-items: center;
+
+  img {
+    top: 10px;
+    right: 30px;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    filter: invert(100%);
+  }
+
+  @media (max-width: 768px) {
+    img {
+      top: 8px;
+      right: 10px;
+    }
+  }
+`
+
+export const Container = styled.div`
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${(props) => props.theme.colors.backgroundColor};
 
   @media (max-width: 768px) {
     margin-top: 50px;
   }
+`
+
+export const Dropback = styled.div`
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(15, 15, 15, 0.95);
 `
 
 export const Main = styled.div`

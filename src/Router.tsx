@@ -1,10 +1,13 @@
 import { Routes, Route } from 'react-router-dom'
-import { Home } from './pages/Home';
+import { ModalsContextProvider } from './contexts/ModalsContext'
+import { Home } from './pages/Home'
 
 export function Router() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
-  );
+    <ModalsContextProvider>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </ModalsContextProvider>
+  )
 }

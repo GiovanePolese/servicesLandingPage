@@ -4,15 +4,17 @@ export const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 400px;
   -webkit-animation: pulse 1.5s infinite;
   button {
     background-color: #5d5dff;
+    width: 100%;
     font-size: 18px;
     font-weight: 700;
     color: white;
     border: none;
     border-radius: 30px;
-    padding: 15px 77px 15px 77px;
+    padding: 20px 30px;
     cursor: pointer;
     transition: background-color 0.3s;
     -webkit-animation: pulse 1.5s infinite;
@@ -35,5 +37,10 @@ export const Button = styled.div`
       @include transform(scale(0.9));
       box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: unset;
   }
 `
