@@ -10,12 +10,13 @@ import { SectionFaq } from '../../components/SectionFaq'
 
 import { SideMenuContextProvider } from '../../contexts/SideMenuContext'
 
-import * as S from '../../styles/styles'
+import * as S from './styles'
 import { Header } from '../../components/Header'
 import { SideMenu } from '../../components/SideMenu'
 import { ModalForm } from '../../components/ModalForm'
 import { ModalsContext } from '../../contexts/ModalsContext'
 import { useContext } from 'react'
+import { Footer } from '../../components/Footer'
 
 export const Home = () => {
   const { modalsContextIsOpen } = useContext(ModalsContext)
@@ -34,6 +35,7 @@ export const Home = () => {
           <SectionDescription />
           <SectionDepositions />
           <SectionFaq />
+          <Footer />
         </S.Container>
       </S.Sections>
     </ThemeProvider>
