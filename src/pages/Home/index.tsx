@@ -14,8 +14,12 @@ import * as S from '../../styles/styles'
 import { Header } from '../../components/Header'
 import { SideMenu } from '../../components/SideMenu'
 import { ModalForm } from '../../components/ModalForm'
+import { ModalsContext } from '../../contexts/ModalsContext'
+import { useContext } from 'react'
 
 export const Home = () => {
+  const { modalsContextIsOpen } = useContext(ModalsContext)
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
@@ -26,7 +30,7 @@ export const Home = () => {
       <S.Sections>
         <S.Container>
           <SectionIntroduction />
-          <ModalForm />
+          {modalsContextIsOpen && <ModalForm />}
           <SectionDescription />
           <SectionDepositions />
           <SectionFaq />

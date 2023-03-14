@@ -1,9 +1,13 @@
+import { useContext } from 'react'
+import { ModalsContext } from '../../contexts/ModalsContext'
 import { Button } from '../Button'
 import { Texts } from '../Texts'
 import * as S from './styles'
 
 export const SectionIntroduction = () => {
+  const { setModalsContextOpen } = useContext(ModalsContext)
   const titulo = Texts.introduction.title.toUpperCase()
+
   return (
     <S.Wrapper id="introduction">
       <S.ImageHeader className="mobile">
@@ -14,7 +18,10 @@ export const SectionIntroduction = () => {
         <p>{Texts.introduction.subtitle}</p>
 
         <S.ContainerButton>
-          <Button text={Texts.description.button} />
+          <Button
+            text={Texts.description.button}
+            onClick={() => setModalsContextOpen((current) => !current)}
+          />
 
           <iframe
             width="560"

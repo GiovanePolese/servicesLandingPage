@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Sections = styled.div`
   width: 100%;
@@ -8,6 +8,6 @@ export const Sections = styled.div`
 `
 
 export const Container = styled.div`
-  width: 90%;
+  width: 85%;
   max-width: 1440px;
 `
