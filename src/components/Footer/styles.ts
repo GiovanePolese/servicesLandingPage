@@ -3,15 +3,12 @@ import styled from 'styled-components'
 export const Wrapper = styled.section`
   width: 100%;
   display: flex;
-  margin-top: 200px;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 
-  h2 {
+  h3 {
     color: white;
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 50px;
-    height: fit-content;
+    font-size: ${(props) => props.theme.fonts.size.xsmall};
   }
 `
