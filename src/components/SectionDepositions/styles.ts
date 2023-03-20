@@ -2,9 +2,19 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.section`
   width: 100%;
+  padding-top: 60px;
   background-color: #151717;
   display: flex;
   justify-content: center;
+
+  .comtainer {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      width: 85%;
+    }
+  }
 
   @media (max-width: 768px) {
     margin-top: 50px;
@@ -40,26 +50,24 @@ export const Text = styled.div`
 
   h2 {
     color: #d9e3ea;
-    font-size: 3.6rem;
-    width: 100%;
+    font-size: ${(props) => props.theme.fonts.size.xxlarge};
   }
 
   p {
     color: #9ba9b4;
-    font-size: 1.8rem;
-    width: 80%;
+    font-size: ${(props) => props.theme.fonts.size.medium};
   }
 
   @media (max-width: 768px) {
     gap: 16px;
 
     h2 {
-      font-size: 2.6rem;
+      font-size: ${(props) => props.theme.fonts.size.xxlarge};
     }
 
     p {
       color: #9ba9b4;
-      font-size: 1.4rem;
+      font-size: ${(props) => props.theme.fonts.size.medium};
     }
   }
 `
@@ -67,7 +75,6 @@ export const Text = styled.div`
 export const Cards = styled.div`
   width: 100%;
   justify-content: center;
-  margin-bottom: 100px;
   align-items: center;
   max-width: 1200px;
   justify-items: center;
@@ -138,7 +145,7 @@ export const Photo = styled.div`
     content: ' ';
     width: 22px;
     height: 19px;
-    background: url('/images/aspasAzuis.svg') no-repeat;
+    background: url('/images/aspas.svg') no-repeat;
     position: absolute;
     top: 24px;
     left: 78px;
@@ -159,7 +166,7 @@ export const Photo = styled.div`
       content: ' ';
       width: 18px;
       height: 15px;
-      background: url('/images/aspasMobile.svg') no-repeat;
+      background: url('/images/aspas.svg') no-repeat;
       position: absolute;
       top: 20px;
       left: 50px;
@@ -193,7 +200,7 @@ export const TextCard = styled.div`
 
   span {
     font-weight: 600;
-    color: #5d5dff;
+    color: ${(props) => props.theme.colors.secondary};
   }
 
   @media (max-width: 768px) {

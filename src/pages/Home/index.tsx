@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from '../../styles/theme'
 
 import { SectionIntroduction } from '../../components/SectionIntroduction'
-import { SectionDescription } from '../../components/SectionDescription'
+import { SectionServices } from '../../components/SectionServices'
 import { SectionDepositions } from '../../components/SectionDepositions'
 import { SectionFaq } from '../../components/SectionFaq'
 
@@ -29,14 +29,12 @@ export const Home = () => {
         <SideMenu />
       </SideMenuContextProvider>
       <S.Sections>
-        <S.Container>
-          <SectionIntroduction />
-          {modalsContextIsOpen && <ModalForm />}
-          <SectionDescription />
-          <SectionDepositions />
-          <SectionFaq />
-          <Footer />
-        </S.Container>
+        <SectionIntroduction />
+        {modalsContextIsOpen && <ModalForm />}
+        <SectionServices />
+        <SectionDepositions />
+        <SectionFaq />
+        <Footer />
       </S.Sections>
     </ThemeProvider>
   )

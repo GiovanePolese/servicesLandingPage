@@ -1,17 +1,22 @@
 export const defaultTheme = {
   colors: {
     white: '#ffffff',
+    lightWhite: '#E9E9E9',
+    grey: '#25282C',
     black: '#222831',
-    primary: '#5d5dff',
-    secodary: '#EF050E',
+    primary: '#222157',
+    primaryDark: '#151433',
+    primaryDarker: '#0B0D17',
+    secondary: '#FFBB36',
+    secondaryDark: '#A06000',
     burgerMenu: 'rgba(0, 0, 10, 0.95)',
     textColor: {
       primary: '#d9e3ea',
-      secondary: '#9ba9b4',
+      secondary: '#9BA9B4',
       terciary: '#c5d2dc',
     },
     backgroundColor: '#151719',
-    borderColor: '#33363a',
+    borderColor: '#33363A',
   },
   fonts: {
     size: {

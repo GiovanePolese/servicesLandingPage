@@ -1,46 +1,35 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { ButtonProps } from '.'
 
-export const Button = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 400px;
-  -webkit-animation: pulse 1.5s infinite;
-  button {
-    background-color: #5d5dff;
-    width: 100%;
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 20px 30px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    -webkit-animation: pulse 1.5s infinite;
-  }
-
-  button:hover {
-    background-color: #10107c;
-    -webkit-animation: none;
-  }
-
-  @-webkit-keyframes pulse {
-    0% {
-      @include transform(scale(0.9));
+export const Button = styled.div<ButtonProps>`
+  ${({ theme, color, hoverColor, textColor }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 400px;
+    button {
+      cursor: pointer;
+      background-color: ${color ? theme.colors[color] : theme.colors.primary};
+      color: ${textColor ? theme.colors[textColor] : theme.colors.white};
+      width: 100%;
+      font-size: 18px;
+      font-weight: 700;
+      border: none;
+      border-radius: 30px;
+      padding: 20px 30px;
+      transition: background-color 0.3s;
     }
-    70% {
-      @include transform(scale(1));
-      box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
-    }
-    100% {
-      @include transform(scale(0.9));
-      box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
-    }
-  }
 
-  @media (max-width: 768px) {
-    width: 100%;
-    min-width: unset;
-  }
+    button:hover {
+      background-color: ${hoverColor
+        ? theme.colors[hoverColor]
+        : theme.colors.primaryDark};
+      animation: none;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      min-width: unset;
+    }
+  `}
 `

@@ -2,13 +2,23 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.section`
   width: 100%;
-  background-color: #151717;
+  background-color: #0b0d17;
+  padding-top: 105px;
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  padding-bottom: 60px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      width: 85%;
+    }
+  }
 
   @media (max-width: 768px) {
-    margin-top: 20px;
+    padding-top: 100px;
   }
 `
 
@@ -20,19 +30,23 @@ export const Main = styled.div`
   gap: 10px;
 
   h1 {
-    color: #d9e3ea;
-    font-size: 3rem;
+    color: ${(props) => props.theme.colors.textColor.primary};
+    font-size: ${(props) => props.theme.fonts.size.xxlarge};
     font-weight: bold;
+    text-align: center;
+    max-width: 800px;
   }
 
   p {
-    color: #9ba984;
-    font-size: 1.8rem;
-    margin-bottom: 40px;
+    color: ${(props) => props.theme.colors.textColor.secondary};
+    font-size: ${(props) => props.theme.fonts.size.large};
+    margin: 20px 0 40px 0;
+    text-align: center;
+    max-width: 1000px;
   }
 
   strong {
-    color: ${(props) => props.theme.colors.secodary};
+    color: ${(props) => props.theme.colors.secondary};
   }
 
   @media (max-width: 768px) {

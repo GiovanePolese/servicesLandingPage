@@ -9,22 +9,36 @@ export const ModalForm = () => {
     <>
       <S.Dropback onClick={() => setModalsContextOpen((current) => !current)} />
       <S.Wrapper>
-        <S.Main>
-          <p>Digite as informações abaixo</p>
-          <S.Form>
-            <form action="" method="post">
-              <input type="text" placeholder="Nome Completo*" />
-              <input type="email" name="" id="" placeholder="Seu e-mail*" />
-              <input type="tel" name="" id="" placeholder="Whatsapp com DDD*" />
-              <Button text="Enviar" />
-            </form>
-          </S.Form>
-        </S.Main>
-        <img
-          src="../../../public/images/close.png"
-          alt="close"
-          onClick={() => setModalsContextOpen((current) => !current)}
-        />
+        <div className="container">
+          <S.Main>
+            <p>
+              <strong>Digite as informações</strong> abaixo e dê o primeiro
+              passo para <strong>alavancar seu negócio</strong>
+            </p>
+            <S.Form>
+              <form action="" method="post">
+                <input type="text" placeholder="Nome Completo*" />
+                <input type="email" name="" id="" placeholder="Seu e-mail*" />
+                <input
+                  type="tel"
+                  name=""
+                  id=""
+                  placeholder="Whatsapp com DDD*"
+                />
+                <Button
+                  text="Enviar"
+                  color="secondary"
+                  hoverColor="secondaryDark"
+                />
+              </form>
+            </S.Form>
+          </S.Main>
+          <img
+            src="../../../public/images/close.png"
+            alt="close"
+            onClick={() => setModalsContextOpen((current) => !current)}
+          />
+        </div>
       </S.Wrapper>
     </>
   )

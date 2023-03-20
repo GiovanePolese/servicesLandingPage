@@ -1,4 +1,14 @@
-import React from "react";
+import { MouseEventHandler } from 'react'
+import { faqType } from '../Texts'
+
+type AccordionItemProps = {
+  showDescription: string
+  ariaExpanded: string
+  fontWeightBold: string
+  item: faqType
+  index: number
+  onClick: MouseEventHandler<HTMLButtonElement>
+}
 
 const AccordionItem = ({
   showDescription,
@@ -7,7 +17,7 @@ const AccordionItem = ({
   item,
   index,
   onClick,
-}) => (
+}: AccordionItemProps) => (
   <div className="faq__question" key={item.question}>
     <dt>
       <button
@@ -16,18 +26,15 @@ const AccordionItem = ({
         className={`faq__question-button ${fontWeightBold}`}
         onClick={onClick}
       >
-        {item.question}
+        <p>{item.question}</p>
       </button>
     </dt>
     <dd>
-      <p
-        id={`faq${index + 1}_desc`}
-        className={`faq__desc ${showDescription}`}
-      >
+      <p id={`faq${index + 1}_desc`} className={`faq__desc ${showDescription}`}>
         {item.answer}
       </p>
     </dd>
   </div>
-);
+)
 
-export default AccordionItem;
+export default AccordionItem
