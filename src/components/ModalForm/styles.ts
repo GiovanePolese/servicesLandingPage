@@ -11,6 +11,15 @@ export const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
 
+  strong {
+    color: ${(props) => props.theme.colors.secondary};
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
   img {
     top: 10px;
     right: 30px;
@@ -61,12 +70,11 @@ export const Dropback = styled.div`
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  max-width: 400px;
   gap: 24px;
-
-  p {
-    color: ${(props) => props.theme.colors.white};
-  }
 `
 
 export const Form = styled.div`

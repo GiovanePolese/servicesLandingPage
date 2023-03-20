@@ -5,10 +5,20 @@ export const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  background-color: ${(props) => props.theme.colors.lightWhite};
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      width: 85%;
+    }
+  }
 
   h3 {
-    color: white;
+    color: ${(props) => props.theme.colors.grey};
     font-size: ${(props) => props.theme.fonts.size.xsmall};
   }
 `

@@ -1,15 +1,15 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
+  width: 100%;
   .faq__desc.show-description {
-    height: 2rem;
-    margin-bottom: 15px;
+    height: fit-content;
+    margin-bottom: 25px;
   }
 
   .attribution {
     font-size: 11px;
     text-align: center;
-    color: black;
     padding-top: 10px;
   }
   .attribution a {
@@ -37,59 +37,69 @@ export const Wrapper = styled.div`
     &__title {
       margin: 0;
       padding-bottom: 25px;
+      font-size: ${(props) => props.theme.fonts.size.xxlarge};
+      color: ${(props) => props.theme.colors.primary};
+      font-weight: 800;
+      text-align: center;
     }
 
     &__question {
-      max-width: 350px;
       width: 100%;
-      border-bottom: 1px solid blue;
+      border-bottom: 1px solid ${(props) => props.theme.colors.primary};
     }
 
     &__question-button {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      align-items: center;
       border: none;
       background-color: transparent;
-      padding: 0px;
-      color: black;
+      padding: 18px 0;
+      color: ${(props) => props.theme.colors.primary};
+      text-align: left;
       cursor: pointer;
 
-      padding-top: 18px;
-      padding-bottom: 18px;
-
-      &::after {
-        content: url('/images/arrowDown.svg');
-        margin-right: 17px;
-        transform: rotate(90deg);
+      &::before {
+        content: url('/images/arrow.svg');
       }
 
       &:hover {
-        color: red;
+        color: ${(props) => props.theme.colors.secondary};
+      }
+
+      p {
+        margin-left: 15px;
+        font-size: ${(props) => props.theme.fonts.size.large};
+        color: ${(props) => props.theme.colors.primary};
+
+        @media (max-width: 768px) {
+          font-size: ${(props) => props.theme.fonts.size.medium};
+        }
       }
     }
 
     &__desc {
-      margin-left: -40px;
+      font-size: ${(props) => props.theme.fonts.size.small};
+      color: ${(props) => props.theme.colors.primary};
+      margin-left: 60px;
       padding-right: 17px;
-      margin-top: 0;
       margin-bottom: 0;
       height: 0;
       overflow: hidden;
-      transition: all 200ms ease-out;
+      transition: all 300ms ease-out;
     }
   }
 
   /* Arrows */
 
   /* closed */
-  .faq__question-button::after {
+  .faq__question-button::before {
     transition: transform 300ms ease-out;
   }
 
   /* open */
-  .font-weight-bold::after {
-    transform: rotate(0deg);
+  .font-weight-bold::before {
+    transform: rotate(90deg);
   }
 
   .illustration {
@@ -158,18 +168,9 @@ export const Wrapper = styled.div`
       flex-direction: column;
       align-items: center;
 
-      padding-top: 132px;
       padding-bottom: 48px;
 
-      &__question {
-        max-width: 279px;
-      }
-
       &__question-button {
-        width: 279px;
-        font-size: 13px;
-        line-height: 13px;
-
         &::after {
           padding-right: 0px;
         }

@@ -1,3 +1,8 @@
+export type FaqType = {
+  question: string
+  answer: string
+}
+
 export type TextsType = {
   header: {
     name: string
@@ -8,7 +13,7 @@ export type TextsType = {
     subtitle: string
     button: string
   }
-  description: {
+  services: {
     title: string
     subtitle: string
     icons: {
@@ -36,10 +41,7 @@ export type TextsType = {
       subtitle: string
     }[]
   }
-  faq: {
-    question: string
-    answer: string
-  }[]
+  faq: FaqType[]
 }
 
 export const Texts: TextsType = {
@@ -49,45 +51,49 @@ export const Texts: TextsType = {
       link: 'introduction',
     },
     {
-      name: 'Descrição',
-      link: 'description',
+      name: 'Serviços',
+      link: 'services',
     },
     {
       name: 'Depoimentos',
       link: 'deposition',
     },
+    {
+      name: 'Dúvidas Frequentes',
+      link: 'faq',
+    },
   ],
   introduction: {
-    title: 'Crie campanhas que <strong>gerem resultado</strong>',
+    title:
+      'AUMENTE <strong>SEU FATURAMENTO</strong> COM ESTRATÉGIAS QUE <strong>GERAM RESULTADO</strong>',
     subtitle:
-      'Aumente o engajamento em suas páginas com vídeos profissionais do seu negócio',
-    button: 'Conheça os pacotes',
+      'Aumente suas conversões com criativos e anúncios que realmente vão trazer resultados signicativos para o seu negócio',
+    button: 'Quero impulsionar meu negócio',
   },
-  description: {
-    title: 'Apresente seu negócio',
-    subtitle:
-      'Mostre o quão valiosa sua marca pode ser com um storytelling que grude a atenção dos seus clientes. Tornando seus produtos irresistíveis.',
+  services: {
+    title: 'Nossos serviços',
+    subtitle: 'Conheça um pouco mais sobre o nosso trabalho',
     icons: [
       {
-        img: '/images/iconHD.svg',
-        name: 'Vídeos em FullHD',
+        img: '/images/iconPlay.svg',
+        name: 'Produção de criativos',
         description:
-          'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.',
+          'Produção de vídeos e/ou imagens atrativos, utilizando copy persuasiva com foco em engajamento e cliques',
       },
       {
-        img: '/images/iconSlow.svg',
-        name: 'Slow Motion',
+        img: '/images/iconClick.svg',
+        name: 'Criação de Landing Pages',
         description:
-          'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.',
+          'Desenvolvemos página de vendas e captura de leads de alta performance otimizado para conversão de clientes',
       },
       {
-        img: '/images/iconHD.SVG',
-        name: 'Instant Features',
+        img: '/images/iconChartUp.svg',
+        name: 'Gerenciamento de anúncios',
         description:
-          'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.',
+          'Gestão de tráfego para campanhas no facebook e instagram estratégicas para seu público alvo.',
       },
     ],
-    button: 'Conheça os pacotes',
+    button: 'Quero impulsionar meu negócio',
   },
   review: {
     title: 'Veja o que nossos clientes acharam',
@@ -141,16 +147,19 @@ export const Texts: TextsType = {
   },
   faq: [
     {
-      question: 'Quais são as formas de pagamento?',
-      answer: 'Resposta 1',
+      question: 'Preciso ter domínio e hospedagem para o site?',
+      answer:
+        'Não. Nossa equipe cuidará de toda a estrutura para você. Caso você já tenha estes serviços e deseje mantê-los, nossa equipe também estará disposta a utilizar as ferramentas de sua preferência',
     },
     {
-      question: 'Qual o valor?',
-      answer: 'Resposta 2',
+      question: 'Posso contratar um dos serviços separadamente?',
+      answer:
+        'Claro. Nós disponibilizamos 3 principais serviços que também podem ser prestados separadamente como: produção de materiais audiovisuais; criação de página de vendas; e gestão de anúncios.',
     },
     {
-      question: 'Preciso ter Hospedagem e Domínio?',
-      answer: 'Resposta 3',
+      question: 'Quanto tempo leva para a página ficar pronta?',
+      answer:
+        'O tempo pode variar de acordo com suas necessidades. Porém seguindo nossos modelos pré desenvolvidos, sua página estará pronta em até 1 semana.',
     },
   ],
 }
