@@ -17,13 +17,20 @@ export const ModalForm = () => {
             </p>
             <S.Form>
               <form action="" method="post">
-                <input type="text" placeholder="Nome Completo*" />
-                <input type="email" name="" id="" placeholder="Seu e-mail*" />
+                <input type="text" placeholder="Nome Completo*" required />
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Seu e-mail*"
+                  required
+                />
                 <input
                   type="tel"
                   name=""
                   id=""
                   placeholder="Whatsapp com DDD*"
+                  required
                 />
                 <Button
                   text="Enviar"
@@ -35,7 +42,7 @@ export const ModalForm = () => {
           </S.Main>
           <img
             src="../../../public/images/close.png"
-            alt="close"
+            alt="botão de fechar"
             onClick={() => setModalsContextOpen((current) => !current)}
           />
         </div>

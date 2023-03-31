@@ -76,21 +76,21 @@ export const Texts: TextsType = {
     icons: [
       {
         img: '/images/iconPlay.svg',
-        name: 'Produção de criativos',
+        name: 'Produção de vídeos',
         description:
-          'Produção de vídeos e/ou imagens atrativos, utilizando copy persuasiva com foco em engajamento e cliques',
+          'Produção de materiais audiovisuais para campanhas/websites, deixando seu produto mais atrativo e trazendo mais profissionalismo.',
       },
       {
         img: '/images/iconClick.svg',
         name: 'Criação de Landing Pages',
         description:
-          'Desenvolvemos página de vendas e captura de leads de alta performance otimizado para conversão de clientes',
+          'Desenvolvemos página de vendas e captura de leads de alta performance otimizado para conversão de clientes.',
       },
       {
         img: '/images/iconChartUp.svg',
         name: 'Gerenciamento de anúncios',
         description:
-          'Gestão de tráfego para campanhas no facebook e instagram estratégicas para seu público alvo.',
+          'Gestão de tráfego para campanhas no facebook e instagram estratégicas para seu público alvo. Produzimos criativos para seu anúncio e gerenciamos a campanha.',
       },
     ],
     button: 'Quero impulsionar meu negócio',
@@ -101,26 +101,26 @@ export const Texts: TextsType = {
       'Conheça um pouquinho da experiência que outros clientes tiveram com nossos serviços.',
     cards: [
       {
-        img: '/images/deposition1.svg',
-        video: '/images/imageVideo.svg',
-        name: 'Anastasia Dan',
-        profissao: 'UX Board',
+        img: '/images/depositionMaiara.jpg',
+        video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
+        name: 'Maiara',
+        profissao: 'Presidente de time',
       },
       {
-        img: '/images/deposition2.svg',
-        video: '/images/imageVideo.svg',
-        name: 'Roman Level',
-        profissao: 'Marketing',
+        img: '/images/depositionAdriana.jpg',
+        video: 'https://www.youtube.com/embed/wpaBP6LwYrE',
+        name: 'Adriana',
+        profissao: 'Empresária',
       },
       {
-        img: '/images/deposition3.svg',
-        video: '/images/imageVideo.svg',
-        name: 'Akex Sackett',
+        img: '/images/depositionAntonio.jpg',
+        video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
+        name: 'Antonio',
         profissao: 'Empresário',
       },
       {
         img: '/images/deposition1.svg',
-        video: '/images/imageVideo.svg',
+        video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
         name: 'Akex Sackett',
         profissao: 'Empresário',
       },

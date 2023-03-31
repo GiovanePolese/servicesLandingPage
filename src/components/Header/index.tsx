@@ -43,7 +43,7 @@ export const Header = () => {
 
   return (
     <S.Wrapper className={color ? 'dark' : ''}>
-      <img src="/images/logo_branca.png" alt="logo Giovane Polese branca" />
+      <img src="/images/Logo_branca.png" alt="logo Polese Audiovisual branca" />
       <S.Buttons>
         {Texts.header.map((item, index) => (
           <AnchorLink

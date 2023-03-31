@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 80px;
+  padding: 22px 80px;
   background-color: transparent;
   z-index: 100;
   transition: background-color 0.3s ease-in;
@@ -21,8 +21,8 @@ export const Wrapper = styled.div`
     padding: 15px 20px;
 
     img {
-      width: 186px;
-      height: 28px;
+      width: 220px;
+      height: 27px;
     }
   }
 `

@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { ButtonProps } from '.'
 
 export const Button = styled.div<ButtonProps>`
-  ${({ theme, color, hoverColor, textColor }) => css`
+  ${({ theme, color, hoverColor, textColor, width }) => css`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,7 @@ export const Button = styled.div<ButtonProps>`
       cursor: pointer;
       background-color: ${color ? theme.colors[color] : theme.colors.primary};
       color: ${textColor ? theme.colors[textColor] : theme.colors.white};
-      width: 100%;
+      width: ${width || '100%'};
       font-size: 18px;
       font-weight: 700;
       border: none;

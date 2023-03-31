@@ -30,7 +30,7 @@ export const Main = styled.div`
   gap: 10px;
 
   h1 {
-    color: ${(props) => props.theme.colors.textColor.primary};
+    color: ${(props) => props.theme.colors.lightGrey};
     font-size: ${(props) => props.theme.fonts.size.xxlarge};
     font-weight: bold;
     text-align: center;
@@ -38,7 +38,7 @@ export const Main = styled.div`
   }
 
   p {
-    color: ${(props) => props.theme.colors.textColor.secondary};
+    color: ${(props) => props.theme.colors.lightGreyDark};
     font-size: ${(props) => props.theme.fonts.size.large};
     margin: 20px 0 40px 0;
     text-align: center;
