@@ -19,21 +19,26 @@ export const SectionServices = () => {
           <S.Cards>
             {Texts.services.icons.map((icon, index: number) => (
               <S.Card key={index}>
-                <S.CardImage>
-                  <img src={icon.img} alt="icone" />
-                </S.CardImage>
-                <h3>{icon.name}</h3>
-                <p>{icon.description}</p>
+                <div className="content">
+                  <S.CardImage>
+                    <img src={icon.img} alt={'ícone de ' + icon.name} />
+                  </S.CardImage>
+                  <h3>{icon.name}</h3>
+                  <p>{icon.description}</p>
+                </div>
+                <div>
+                  <Button
+                    text="Saiba Mais"
+                    width="200px"
+                    color="white"
+                    textColor="primary"
+                    hoverColor="lightGreyDark"
+                    onClick={() => setModalsContextOpen((current) => !current)}
+                  />
+                </div>
               </S.Card>
             ))}
           </S.Cards>
-
-          <Button
-            text={Texts.services.button}
-            color={'primary'}
-            hoverColor={'primaryDark'}
-            onClick={() => setModalsContextOpen((current) => !current)}
-          />
         </S.Main>
       </div>
     </S.Wrapper>

@@ -74,26 +74,39 @@ export const Cards = styled.div`
 `
 
 export const Card = styled.div`
-  width: 300px;
+  width: 330px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
   text-align: center;
+  background-color: ${(props) => props.theme.colors.primary};
+  height: 500px;
+  padding: 35px;
+  border-radius: 10px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 
   h3 {
-    color: ${(props) => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.white};
     font-size: ${(props) => props.theme.fonts.size.large};
     font-weight: bold;
   }
 
   p {
-    color: ${(props) => props.theme.colors.borderColor};
+    color: ${(props) => props.theme.colors.white};
     font-size: ${(props) => props.theme.fonts.size.small};
   }
 
   @media (max-width: 768px) {
     gap: 1.6rem;
+    width: 100%;
+    height: 470px;
 
     h3 {
       font-size: ${(props) => props.theme.fonts.size.large};
@@ -110,7 +123,7 @@ export const CardImage = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.white};
   border-radius: 50%;
   min-width: 60px;
   max-width: 60px;

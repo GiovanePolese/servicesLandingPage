@@ -35,13 +35,16 @@ export const SectionDepositions = () => {
                       <img
                         src={card.img}
                         className="photo"
-                        alt="Foto cliente"
+                        alt={'Foto cliente ' + card.name}
                       />
                     </S.Photo>
-                    <img
-                      src={card.video}
+                    <iframe
                       className="video"
-                      alt="Vídeo cliente"
+                      src={card.video + '?mute=0'} // vídeo com som habilitado
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
                     />
                     <S.Border></S.Border>
                     <S.TextCard>
@@ -57,7 +60,7 @@ export const SectionDepositions = () => {
 
           <S.Cards className="mobile">
             <Swiper
-              slidesPerView={1.5}
+              slidesPerView={1.3}
               spaceBetween={0}
               freeMode={true}
               centeredSlides={true}
@@ -74,14 +77,17 @@ export const SectionDepositions = () => {
                       <img
                         src={card.img}
                         className="photo"
-                        alt="Foto cliente"
+                        alt={'Foto cliente ' + card.name}
                       />
                     </S.Photo>
-                    <img
-                      src={card.video}
+                    <iframe
                       className="video"
-                      alt="Vídeo cliente"
-                    />
+                      src={card.video}
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                     <S.Border></S.Border>
                     <S.TextCard>
                       <p>

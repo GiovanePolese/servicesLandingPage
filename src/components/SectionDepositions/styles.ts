@@ -102,6 +102,7 @@ export const Cards = styled.div`
 `
 
 export const Card = styled.div`
+  cursor: grab;
   width: 350px;
   height: 380px;
   display: flex;
@@ -112,6 +113,10 @@ export const Card = styled.div`
   text-align: end;
   padding: 28px 40px;
 
+  &:active {
+    cursor: grabbing;
+  }
+
   .video {
     width: 100%;
     height: 180px;
@@ -119,7 +124,7 @@ export const Card = styled.div`
 
   @media (max-width: 768px) {
     max-height: 300px;
-    height: 260px;
+    height: 280px;
     width: 220px;
     max-width: 400px;
     padding: 20px 22px;
@@ -133,12 +138,9 @@ export const Photo = styled.div`
   justify-content: flex-start;
 
   img {
-    max-width: 50px;
-    min-width: 50px;
     width: 50px;
     height: 50px;
-    min-height: 50px;
-    max-height: 50px;
+    border-radius: 50%;
   }
 
   &:after {

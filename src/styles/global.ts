@@ -29,4 +29,33 @@ export default createGlobalStyle`
     width: 85%;
     max-width: 1440px;
   }
+
+  .swiper {
+    height: 420px !important;
+  }
+
+  .swiper-pagination {
+    bottom: env(safe-area-inset-bottom) !important;
+    z-index: 99999;
+    transform: scale(1.3);
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 25px;
+    border-radius: 10px;
+  }
+
+  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    background-color: ${(props) => props.theme.colors.white} !important;
+  }
+
+  @media (max-width: 768px) {
+    .swiper {
+      height: 310px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      width: 20px;
+    }
+  }
 `
