@@ -1,11 +1,11 @@
 import { MouseEventHandler } from 'react'
-import { faqType } from '../Texts'
+import { FaqType } from '../Texts'
 
 type AccordionItemProps = {
   showDescription: string
   ariaExpanded: string
   fontWeightBold: string
-  item: faqType
+  item: FaqType
   index: number
   onClick: MouseEventHandler<HTMLButtonElement>
 }
