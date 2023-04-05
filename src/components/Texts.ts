@@ -65,10 +65,10 @@ export const Texts: TextsType = {
   ],
   introduction: {
     title:
-      'AUMENTE <strong>SEU FATURAMENTO</strong> COM ESTRATÉGIAS QUE <strong>GERAM RESULTADO</strong>',
+      'AUMENTE <strong>SEU ALCANCE</strong> COM VÍDEOS <strong>PROFISSIONAIS</strong>',
     subtitle:
-      'Aumente suas conversões com criativos e anúncios que realmente vão trazer resultados signicativos para o seu negócio',
-    button: 'Quero impulsionar meu negócio',
+      'Tenha mais conversões com vídeos e anúncios que realmente vão trazer resultados para o seu negócio',
+    button: 'Quero impulsionar meu negócio.',
   },
   services: {
     title: 'Nossos serviços',
@@ -82,13 +82,13 @@ export const Texts: TextsType = {
       },
       {
         img: '/images/iconClick.svg',
-        name: 'Criação de Landing Pages',
+        name: 'Criação de Roteiros',
         description:
           'Desenvolvemos página de vendas e captura de leads de alta performance otimizado para conversão de clientes.',
       },
       {
         img: '/images/iconChartUp.svg',
-        name: 'Gerenciamento de anúncios',
+        name: 'Edição de vídeos',
         description:
           'Gestão de tráfego para campanhas no facebook e instagram estratégicas para seu público alvo. Produzimos criativos para seu anúncio e gerenciamos a campanha.',
       },
