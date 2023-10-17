@@ -16,7 +16,7 @@ export const SectionIntroduction = () => {
         </S.ImageHeader>
         <S.Main>
           <h1 dangerouslySetInnerHTML={{ __html: titulo }}></h1>
-          <p>{Texts.introduction.subtitle}</p>
+          <p dangerouslySetInnerHTML={{ __html: Texts.introduction.subtitle}}></p>
 
           <S.ContainerButton>
             <Button

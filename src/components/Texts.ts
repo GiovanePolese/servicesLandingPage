@@ -65,9 +65,9 @@ export const Texts: TextsType = {
   ],
   introduction: {
     title:
-      'AUMENTE <strong>SEU ALCANCE</strong> COM VÍDEOS <strong>PROFISSIONAIS</strong>',
+      'AUMENTE <strong>SEU ALCANCE</strong> <br/>COM VÍDEOS <strong>PROFISSIONAIS</strong>',
     subtitle:
-      'Tenha mais conversões com vídeos e anúncios que realmente vão trazer resultados para o seu negócio',
+      'Tenha mais conversões e mais engajamento com vídeos<br/>e anúncios que realmente trazem resultados',
     button: 'Quero impulsionar meu negócio.',
   },
   services: {
@@ -78,28 +78,34 @@ export const Texts: TextsType = {
         img: '/images/iconPlay.svg',
         name: 'Produção de vídeos',
         description:
-          'Produção de materiais audiovisuais para campanhas/websites, deixando seu produto mais atrativo e trazendo mais profissionalismo.',
+          'Produção de materiais audiovisuais para campanhas/websites, deixando seu produto mais atrativo e com maior profissionalismo.',
       },
       {
         img: '/images/iconClick.svg',
         name: 'Criação de Roteiros',
         description:
-          'Desenvolvemos página de vendas e captura de leads de alta performance otimizado para conversão de clientes.',
+          'Roteiros otimizados para gerar mais engajamento nas redes sociais. Seguindo o padrão de comunicação da empresa.',
       },
       {
         img: '/images/iconChartUp.svg',
         name: 'Edição de vídeos',
         description:
-          'Gestão de tráfego para campanhas no facebook e instagram estratégicas para seu público alvo. Produzimos criativos para seu anúncio e gerenciamos a campanha.',
+          'Traga os sentimentos desejados para cada imagem. A edição é onde a magia realmente acontece.',
       },
     ],
-    button: 'Quero impulsionar meu negócio',
+    button: 'Quero minha produção audiovisual',
   },
   review: {
     title: 'Veja o que nossos clientes acharam',
     subtitle:
       'Conheça um pouquinho da experiência que outros clientes tiveram com nossos serviços.',
     cards: [
+      {
+        img: '/images/depositionAmalia.jpg',
+        video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
+        name: 'Amália',
+        profissao: 'Senadora de Curitiba',
+      },
       {
         img: '/images/depositionMaiara.jpg',
         video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
@@ -116,12 +122,6 @@ export const Texts: TextsType = {
         img: '/images/depositionAntonio.jpg',
         video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
         name: 'Antonio',
-        profissao: 'Empresário',
-      },
-      {
-        img: '/images/deposition1.svg',
-        video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
-        name: 'Akex Sackett',
         profissao: 'Empresário',
       },
     ],
@@ -147,19 +147,29 @@ export const Texts: TextsType = {
   },
   faq: [
     {
-      question: 'Preciso ter domínio e hospedagem para o site?',
+      question: 'Como ter meu vídeo profissional?',
       answer:
-        'Não. Nossa equipe cuidará de toda a estrutura para você. Caso você já tenha estes serviços e deseje mantê-los, nossa equipe também estará disposta a utilizar as ferramentas de sua preferência',
+        'Basta clicar em qualquer um dos botões da página e preencher o formulário para que nossa equipe entre em contato o quanto antes para montar seu orçamento sem compromisso.',
     },
     {
       question: 'Posso contratar um dos serviços separadamente?',
       answer:
-        'Claro. Nós disponibilizamos 3 principais serviços que também podem ser prestados separadamente como: produção de materiais audiovisuais; criação de página de vendas; e gestão de anúncios.',
+        'Claro. Nós disponibilizamos 3 principais serviços que também podem ser prestados separadamente como: roteirização, para criação de conteúdos que realmente engajam; captação de imagem e som em alta qualidade; e edição de vídeos para mostrar a melhor experiência para o expectador.',
     },
     {
-      question: 'Quanto tempo leva para a página ficar pronta?',
+      question: 'Quanto tempo leva para o vídeo ficar pronto?',
       answer:
-        'O tempo pode variar de acordo com suas necessidades. Porém seguindo nossos modelos pré desenvolvidos, sua página estará pronta em até 1 semana.',
+        'O tempo pode variar de acordo com suas necessidades e a complexidade do seu vídeo. O período médio de entrega após as gravações varia de 1 semana a 10 dias.',
+    },
+    {
+      question: 'Como recebo os vídeos?',
+      answer:
+        'Os vídeos finais são disponibilizados em um drive na nuvem, que podem ser vizualizados e baixados diretamente na plataforma.',
+    },
+    {
+      question: 'Sou atleta, como consigo os vídeos do meu jogo?',
+      answer:
+        'Caso nossa equipe tenha gravado uma partida que você participou e deseja ter acesso às imagens, entre em contato pelo nosso whatsapp (41) 99821-2509 ou pelo nosso email contato@poleseaudiovisual.com.br.',
     },
   ],
 }

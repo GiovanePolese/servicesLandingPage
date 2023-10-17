@@ -75,6 +75,10 @@ export const Main = styled.div`
   text-align: center;
   max-width: 400px;
   gap: 24px;
+
+  p.footer{
+    font-size: 1rem;
+  }
 `
 
 export const Form = styled.div`
@@ -90,6 +94,10 @@ export const Form = styled.div`
     flex-direction: column;
     gap: 24px;
     width: 100%;
+    
+    input {
+      color: white;
+    }
 
     @media (max-width: 768px) {
       min-width: 340px;

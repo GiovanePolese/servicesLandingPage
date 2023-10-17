@@ -55,3 +55,11 @@ Exemplo
   border: 1px solid ${props => props.theme.colors.borderColor};
 }
 ```
+
+## | Deploy
+Gerar versão final com
+```bash
+npm run build
+```
+
+Depois subir a pasta dist em public_html no cpanel

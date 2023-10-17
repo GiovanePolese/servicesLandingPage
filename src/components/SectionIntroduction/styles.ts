@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.section`
   width: 100%;
   background-color: #0b0d17;
-  padding-top: 105px;
+  padding-top: 95px;
   display: flex;
   justify-content: center;
   padding-bottom: 60px;
@@ -39,8 +39,8 @@ export const Main = styled.div`
 
   p {
     color: ${(props) => props.theme.colors.lightGreyDark};
-    font-size: ${(props) => props.theme.fonts.size.large};
-    margin: 20px 0 40px 0;
+    font-size: ${(props) => props.theme.fonts.size.medium};
+    margin: 8px 0 30px 0;
     text-align: center;
     max-width: 1000px;
   }
