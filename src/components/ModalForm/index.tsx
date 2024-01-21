@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useState, MouseEvent as ReactMouseEvent } from 'react'
 import { ModalsContext } from '../../contexts/ModalsContext'
 import { Button } from '../Button'
 import * as S from './styles'
@@ -11,8 +11,32 @@ export const ModalForm = () => {
   const [mobile, setMobile] = useState('');
   const [email, setEmail] = useState('');
 
-  const handleSubmitButton = (e: React.MouseEvent<HTMLButtonElement>) => {
-    alert('Submit')
+  const handleMobileInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const numericValue = event.target.value.replace(/\D/g, '');
+    const formattedValue = formatMobileNumber(numericValue);
+
+    setMobile(formattedValue);
+  };
+
+  const formatMobileNumber = (numericValue: string): string => {
+    if (numericValue) {
+      if (numericValue.length < 3) {
+        return `(${numericValue.slice(0, 2)}`;
+      }
+      if (numericValue.length >= 3 && numericValue.length <= 7) {
+        return `(${numericValue.slice(0, 2)}) ${numericValue.slice(2, 7)}`;
+      }
+      if (numericValue.length > 7) {
+        return `(${numericValue.slice(0, 2)}) ${numericValue.slice(2, 7)}-${numericValue.slice(7, 11)}`;
+      }
+    }
+    return '';
+  };
+
+  const handleSubmitButton = (e: ReactMouseEvent<HTMLButtonElement>) => {
+    if (!name || !email || !mobile) {
+      return;
+    }
     e.preventDefault();
 
     const url = 'https://audiovisual.fly.dev/forms';
@@ -27,10 +51,12 @@ export const ModalForm = () => {
     axios.post(url, data)
       .then(response => {
         setResponseData(response.data);
-        console.log(responseData);
+        setModalsContextOpen((current) => !current);
+        window.open('/cadastro-concluido', '_blank');
       })
       .catch(error => {
         console.error('Error making POST request:', error);
+        console.log(error.response.data.message)
       });
   }
 
@@ -71,13 +97,13 @@ export const ModalForm = () => {
                   placeholder="Whatsapp com DDD*"
                   required
                   value={mobile}
-                  onChange={event => setMobile(event.target.value)}
+                  onChange={handleMobileInputChange}
                 />
                 <Button
                   text="Enviar"
                   color="secondary"
                   hoverColor="secondaryDark"
-                  onClick={e => handleSubmitButton(e)}
+                  onClick={(e) => handleSubmitButton(e)}
                 />
               </form>
             </S.Form>
@@ -86,7 +112,7 @@ export const ModalForm = () => {
             </p>
           </S.Main>
           <img
-            src="../../../public/images/close.png"
+            src="/images/close.png"
             alt="botão de fechar"
             onClick={() => setModalsContextOpen((current) => !current)}
           />

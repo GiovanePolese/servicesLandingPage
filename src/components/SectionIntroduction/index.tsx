@@ -14,6 +14,14 @@ export const SectionIntroduction = () => {
         <S.ImageHeader className="mobile">
           <img src="/images/ondas.svg" alt="Ondas azuis" />
         </S.ImageHeader>
+
+        <iframe
+          src="https://www.youtube.com/embed/WSazF_JWI4A?si=Mr-iLxPNWBd_eXJX"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
         <S.Main>
           <h1 dangerouslySetInnerHTML={{ __html: titulo }}></h1>
           <p dangerouslySetInnerHTML={{ __html: Texts.introduction.subtitle}}></p>
@@ -26,16 +34,6 @@ export const SectionIntroduction = () => {
               textColor={'primaryDarker'}
               onClick={() => setModalsContextOpen((current) => !current)}
             />
-
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/uf3QZLz7eYk"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
           </S.ContainerButton>
 
           <S.ImageMain>

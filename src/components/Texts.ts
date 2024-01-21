@@ -102,15 +102,15 @@ export const Texts: TextsType = {
     cards: [
       {
         img: '/images/depositionAmalia.jpg',
-        video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
+        video: 'https://www.youtube.com/embed/ZbxS9WySObg',
         name: 'Amália',
         profissao: 'Senadora de Curitiba',
       },
       {
-        img: '/images/depositionMaiara.jpg',
-        video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
-        name: 'Maiara',
-        profissao: 'Presidente de time',
+        img: '/images/depositionPri.jpg',
+        video: 'https://youtube.com/embed/1sLvm-xGnXY',
+        name: 'Priscila',
+        profissao: 'Atleta',
       },
       {
         img: '/images/depositionAdriana.jpg',
@@ -159,7 +159,7 @@ export const Texts: TextsType = {
     {
       question: 'Quanto tempo leva para o vídeo ficar pronto?',
       answer:
-        'O tempo pode variar de acordo com suas necessidades e a complexidade do seu vídeo. O período médio de entrega após as gravações varia de 1 semana a 10 dias.',
+        'O tempo pode variar de acordo com suas necessidades e a complexidade do seu vídeo. O período médio de entrega após as gravações varia de 3 a 10 dias.',
     },
     {
       question: 'Como recebo os vídeos?',

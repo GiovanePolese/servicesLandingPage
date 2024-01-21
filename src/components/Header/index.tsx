@@ -22,11 +22,14 @@ export const Header = () => {
 
     const selectActiveMenu = () => {
       Texts.header.map((item) => {
-        const observable = document.querySelector('#' + item.link)
-        const pos = observable.getBoundingClientRect()
+        const observable = document.querySelector('#' + item.link);
+        if (observable) {
+          const pos = observable.getBoundingClientRect()
+          const screenHeight = window.innerHeight
 
-        if (pos.top < window.innerHeight && pos.bottom >= 0) {
-          setActive(item.link)
+          if ((screen.height >= 1080 && pos.bottom < screenHeight) || (screen.height < 1080 && pos.top < screenHeight && pos.bottom >= 0)) {
+            setActive(item.link);
+          }
         }
       })
     }

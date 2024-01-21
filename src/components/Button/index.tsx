@@ -1,13 +1,12 @@
-import { MouseEvent } from 'react'
 import * as S from './styles'
 
-export type ButtonProps = {
-  text: string
-  textColor?: string
-  color?: string
-  hoverColor?: string
-  width?: string
-  onClick?: (ev: MouseEvent<HTMLButtonElement>) => void
+export interface ButtonProps {
+  text: string;
+  textColor?: string;
+  color?: string;
+  hoverColor?: string;
+  width?: string;
+  onClick?: (e: any) => void;
 }
 
 export const Button = ({
@@ -25,6 +24,7 @@ export const Button = ({
       hoverColor={hoverColor}
       color={color}
       width={width}
+      text={text}
     >
       <button>{text.toUpperCase()}</button>
     </S.Button>

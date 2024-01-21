@@ -21,7 +21,7 @@ export const SectionServices = () => {
               <S.Card key={index}>
                 <div className="content">
                   <S.CardImage>
-                    <img src={icon.img} alt={'ícone de ' + icon.name} />
+                    <img src={icon.img} alt={'ícone de ' + icon.name} loading='lazy'/>
                   </S.CardImage>
                   <h3>{icon.name}</h3>
                   <p>{icon.description}</p>

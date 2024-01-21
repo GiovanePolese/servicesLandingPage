@@ -3,7 +3,7 @@ import { FaqType } from '../Texts'
 
 type AccordionItemProps = {
   showDescription: string
-  ariaExpanded: string
+  ariaExpanded: boolean
   fontWeightBold: string
   item: FaqType
   index: number

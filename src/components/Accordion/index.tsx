@@ -4,13 +4,13 @@ import { FaqType, Texts } from '../Texts'
 import * as S from './styles'
 
 const Accordion = () => {
-  const [activeIndex, setActiveIndex] = useState(1)
+  const [activeIndex, setActiveIndex] = useState(0)
 
   const renderedQuestionsAnswers = Texts.faq.map(
     (item: FaqType, index: number) => {
       const showDescription = index === activeIndex ? 'show-description' : ''
       const fontWeightBold = index === activeIndex ? 'font-weight-bold' : ''
-      const ariaExpanded = index === activeIndex ? 'true' : 'false'
+      const ariaExpanded = index === activeIndex
       return (
         <AccordionItem
           showDescription={showDescription}
@@ -19,7 +19,11 @@ const Accordion = () => {
           item={item}
           index={index}
           onClick={() => {
-            setActiveIndex(index)
+            if (activeIndex !== index) {
+              setActiveIndex(index)
+            } else {
+              setActiveIndex(-1)
+            }
           }}
           key={index}
         />

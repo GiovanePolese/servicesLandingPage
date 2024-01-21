@@ -36,6 +36,7 @@ export const SectionDepositions = () => {
                         src={card.img}
                         className="photo"
                         alt={'Foto cliente ' + card.name}
+                        loading='lazy'
                       />
                     </S.Photo>
                     <iframe
@@ -44,7 +45,7 @@ export const SectionDepositions = () => {
                       title="YouTube video player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     />
                     <S.Border></S.Border>
                     <S.TextCard>
@@ -86,7 +87,7 @@ export const SectionDepositions = () => {
                       title="YouTube video player"
                       frameBorder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen
+                      allowFullScreen
                     ></iframe>
                     <S.Border></S.Border>
                     <S.TextCard>

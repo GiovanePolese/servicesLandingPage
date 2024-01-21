@@ -11,14 +11,30 @@ export const Wrapper = styled.section`
   .container {
     display: flex;
     justify-content: center;
+    z-index: 2;
+    width: 75%;
+
+    iframe {
+      margin-top: 32px;
+      z-index: 2;
+      min-width: 370px;
+      min-height: 650px;
+    }
 
     @media (max-width: 768px) {
-      width: 85%;
+      width: 90%;
+      flex-direction: column;
+
+      iframe {
+        margin-top: 0;
+        margin-bottom: 18px;
+        min-width: unset;
+      }
     }
   }
 
   @media (max-width: 768px) {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 `
 
@@ -27,6 +43,7 @@ export const Main = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 
   h1 {
@@ -80,7 +97,7 @@ export const ImageMain = styled.div`
   left: 0px;
   width: 550px;
   height: 450px;
-  z-index: 1;
+  z-index: -1;
   top: 300px;
 
   @media (max-width: 768px) {
@@ -97,16 +114,6 @@ export const ContainerButton = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
-
-  iframe {
-    margin-top: 32px;
-    z-index: 2;
-    width: 90%;
-    height: auto;
-    max-height: 900px;
-    min-height: 450px;
-  }
 
   @media (max-width: 768px) {
     display: flex;

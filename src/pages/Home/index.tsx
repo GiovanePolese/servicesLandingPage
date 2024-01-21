@@ -17,6 +17,7 @@ import { ModalForm } from '../../components/ModalForm'
 import { ModalsContext } from '../../contexts/ModalsContext'
 import { useContext } from 'react'
 import { Footer } from '../../components/Footer'
+import { WhatsappIcon } from '../../components/WhatsappIcon'
 
 export const Home = () => {
   const { modalsContextIsOpen } = useContext(ModalsContext)
@@ -28,6 +29,7 @@ export const Home = () => {
         <Header />
         <SideMenu />
       </SideMenuContextProvider>
+      <WhatsappIcon/>
       <S.Sections>
         <SectionIntroduction />
         {modalsContextIsOpen && <ModalForm />}
