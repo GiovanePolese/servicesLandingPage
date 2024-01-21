@@ -20,6 +20,7 @@ export type TextsType = {
       img: string
       name: string
       description: string
+      cta: string
     }[]
     button: string
   }
@@ -79,18 +80,21 @@ export const Texts: TextsType = {
         name: 'Produção de vídeos',
         description:
           'Produção de materiais audiovisuais para campanhas/websites, deixando seu produto mais atrativo e com maior profissionalismo.',
+        cta: 'Saiba Mais',
       },
       {
         img: '/images/iconClick.svg',
         name: 'Criação de Roteiros',
         description:
           'Roteiros otimizados para gerar mais engajamento nas redes sociais. Seguindo o padrão de comunicação da empresa.',
+        cta: 'Saiba Mais',
       },
       {
         img: '/images/iconChartUp.svg',
         name: 'Edição de vídeos',
         description:
           'Traga os sentimentos desejados para cada imagem. A edição é onde a magia realmente acontece.',
+        cta: 'Saiba Mais',
       },
     ],
     button: 'Quero minha produção audiovisual',
@@ -123,6 +127,18 @@ export const Texts: TextsType = {
         video: 'https://www.youtube.com/embed/dIs6O-1EZrc',
         name: 'Antonio',
         profissao: 'Empresário',
+      },
+      {
+        img: '/images/depositionMuniz.jpg',
+        video: 'https://www.youtube.com/embed/KSrKWDttoxM',
+        name: 'Felipe Muniz',
+        profissao: 'Atleta',
+      },
+      {
+        img: '/images/depositionBia.jpg',
+        video: 'https://www.youtube.com/embed/w7K_sESgiXM',
+        name: 'Bia Rangel',
+        profissao: 'Atleta',
       },
     ],
   },

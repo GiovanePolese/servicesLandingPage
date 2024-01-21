@@ -6,7 +6,6 @@ import axios from 'axios'
 
 export const ModalForm = () => {
   const { setModalsContextOpen } = useContext(ModalsContext)
-  const [responseData, setResponseData] = useState(null);
   const [name, setName] = useState('');
   const [mobile, setMobile] = useState('');
   const [email, setEmail] = useState('');
@@ -50,13 +49,11 @@ export const ModalForm = () => {
 
     axios.post(url, data)
       .then(response => {
-        setResponseData(response.data);
         setModalsContextOpen((current) => !current);
         window.open('/cadastro-concluido', '_blank');
       })
       .catch(error => {
         console.error('Error making POST request:', error);
-        console.log(error.response.data.message)
       });
   }
 

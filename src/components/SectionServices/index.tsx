@@ -28,7 +28,7 @@ export const SectionServices = () => {
                 </div>
                 <div>
                   <Button
-                    text="Saiba Mais"
+                    text={icon.cta}
                     width="200px"
                     color="white"
                     textColor="primary"
