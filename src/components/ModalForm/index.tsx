@@ -41,10 +41,11 @@ export const ModalForm = () => {
     const url = 'https://audiovisual.fly.dev/forms';
     const data = {
       full_name: name,
-      email: email,
+      email: email.toLowerCase(),
       mobile: mobile,
       lead_source: 'campaign1',
-      lead_source_details: 'www.poleseaudiovisual.com.br',
+      lead_source_details: '',
+      url: 'www.poleseaudiovisual.com.br',
     };
 
     axios.post(url, data)

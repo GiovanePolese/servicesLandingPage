@@ -7,7 +7,6 @@ import * as S from './styles'
 
 import { SectionRegisterDone } from '../../components/SectionRegisterDone'
 
-import { Footer } from '../../components/Footer'
 import { WhatsappIcon } from '../../components/WhatsappIcon'
 
 export const RegisterDone = () => {
