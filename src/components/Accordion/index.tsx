@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import AccordionItem from '../AccordionItem'
-import { FaqType, Texts } from '../Texts'
+import { Texts } from '../Texts'
+import { FaqType } from '../TextsTypes'
 import * as S from './styles'
 
 const Accordion = () => {

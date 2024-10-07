@@ -1,6 +1,7 @@
 import * as S from './styles'
 
 export interface ButtonProps {
+  buttonId?: string;
   text: string;
   textColor?: string;
   color?: string;
@@ -10,6 +11,7 @@ export interface ButtonProps {
 }
 
 export const Button = ({
+  buttonId,
   onClick,
   text,
   textColor,
@@ -26,7 +28,7 @@ export const Button = ({
       width={width}
       text={text}
     >
-      <button>{text.toUpperCase()}</button>
+      <button id={buttonId}>{text.toUpperCase()}</button>
     </S.Button>
   )
 }

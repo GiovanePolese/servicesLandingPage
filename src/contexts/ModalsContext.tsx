@@ -9,6 +9,8 @@ import {
 type ModalsContextProps = {
   modalsContextIsOpen: boolean
   setModalsContextOpen: Dispatch<SetStateAction<boolean>>
+  modalOriginDescription: string
+  setModalOriginDescription: Dispatch<SetStateAction<string>>
 }
 
 type ModalsContextProviderProps = {
@@ -21,10 +23,16 @@ export function ModalsContextProvider({
   children,
 }: ModalsContextProviderProps) {
   const [modalsContextIsOpen, setModalsContextOpen] = useState(false)
+  const [modalOriginDescription, setModalOriginDescription] = useState('')
 
   return (
     <ModalsContext.Provider
-      value={{ modalsContextIsOpen, setModalsContextOpen }}
+      value={{
+        modalsContextIsOpen,
+        setModalsContextOpen,
+        modalOriginDescription,
+        setModalOriginDescription,
+      }}
     >
       {children}
     </ModalsContext.Provider>

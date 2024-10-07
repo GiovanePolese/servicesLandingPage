@@ -6,7 +6,7 @@ export const WhatsappIcon = () => {
   };
 
   return (
-    <S.Icon onClick={openLink}>
+    <S.Icon id={'whatsappButton'} onClick={openLink}>
       <img src="/images/whatsapp.webp" alt="whatsapp icon" />
     </S.Icon>
   )

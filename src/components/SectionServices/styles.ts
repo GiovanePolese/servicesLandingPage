@@ -83,14 +83,14 @@ export const Card = styled.div`
   text-align: center;
   background-color: ${(props) => props.theme.colors.primary};
   height: 500px;
-  padding: 35px;
+  padding: 35px 28px;
   border-radius: 10px;
 
   .content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
 
   h3 {
@@ -102,6 +102,7 @@ export const Card = styled.div`
   p {
     color: ${(props) => props.theme.colors.white};
     font-size: ${(props) => props.theme.fonts.size.small};
+    padding-top: 1rem;
   }
 
   @media (max-width: 768px) {

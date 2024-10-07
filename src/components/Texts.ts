@@ -1,49 +1,4 @@
-export type FaqType = {
-  question: string
-  answer: string
-}
-
-export type TextsType = {
-  header: {
-    name: string
-    link: string
-  }[]
-  introduction: {
-    title: string
-    subtitle: string
-    button: string
-  }
-  services: {
-    title: string
-    subtitle: string
-    icons: {
-      img: string
-      name: string
-      description: string
-      cta: string
-    }[]
-    button: string
-  }
-  review: {
-    title: string
-    subtitle: string
-    cards: {
-      img: string
-      video: string
-      name: string
-      profissao: string
-    }[]
-  }
-  plans: {
-    title: string
-    subtitle: string
-    cards: {
-      title: string
-      subtitle: string
-    }[]
-  }
-  faq: FaqType[]
-}
+import { TextsType } from "./TextsTypes"
 
 export const Texts: TextsType = {
   header: [
@@ -56,6 +11,10 @@ export const Texts: TextsType = {
       link: 'services',
     },
     {
+      name: 'Portfólio',
+      link: 'portfolio',
+    },
+    {
       name: 'Depoimentos',
       link: 'deposition',
     },
@@ -66,7 +25,7 @@ export const Texts: TextsType = {
   ],
   introduction: {
     title:
-      'AUMENTE <strong>SEU ALCANCE</strong> <br/>COM VÍDEOS <strong>PROFISSIONAIS</strong>',
+      '<strong>ESPECIALISTAS</strong> EM PRODUÇÃO<br/>DE VÍDEOS <strong>VERTICAIS</strong>',
     subtitle:
       'Tenha mais conversões e mais engajamento com vídeos<br/>e anúncios que realmente trazem resultados',
     button: 'Quero impulsionar meu negócio.',
@@ -76,28 +35,78 @@ export const Texts: TextsType = {
     subtitle: 'Conheça um pouco mais sobre o nosso trabalho',
     icons: [
       {
-        img: '/images/iconPlay.svg',
-        name: 'Produção de vídeos',
+        id: 'captureButton',
+        img: '/images/camera.svg',
+        name: 'Gravação de vídeos',
         description:
-          'Produção de materiais audiovisuais para campanhas/websites, deixando seu produto mais atrativo e com maior profissionalismo.',
-        cta: 'Saiba Mais',
+          'Captação de imagens e áudios em alta qualidade. Cada detalhe capturado com atenção para destacar o melhor do seu projeto e/ou evento!',
+        cta: 'Preciso de gravação',
       },
       {
-        img: '/images/iconClick.svg',
-        name: 'Criação de Roteiros',
-        description:
-          'Roteiros otimizados para gerar mais engajamento nas redes sociais. Seguindo o padrão de comunicação da empresa.',
-        cta: 'Saiba Mais',
-      },
-      {
-        img: '/images/iconChartUp.svg',
+        id: 'editingButton',
+        img: '/images/edição.svg',
         name: 'Edição de vídeos',
         description:
-          'Traga os sentimentos desejados para cada imagem. A edição é onde a magia realmente acontece.',
-        cta: 'Saiba Mais',
+          'Eleve seus vídeos com uma edição profissional e de alta qualidade. Dê vida às suas ideias com efeitos e cortes precisos.',
+        cta: 'Preciso de edição',
+      },
+      {
+        id: 'videoProductionButton',
+        img: '/images/claquete.svg',
+        name: 'Produção de vídeos',
+        description:
+          'Produção completa de materiais audiovisuais para campanhas, websites e redes sociais, deixando seu produto mais atrativo e com maior profissionalismo.',
+        cta: 'Quero minha produção',
       },
     ],
     button: 'Quero minha produção audiovisual',
+    buttonId: 'mainButton',
+  },
+  portfolio: {
+    title: 'Conheça nossos trabalhos',
+    subtitle: 'Confira nossos vídeos produzidos para alguns de nossos clientes',
+    cards: [
+      {
+        img: '/images/logo_arbo.jpg',
+        video: 'https://drive.google.com/file/d/1LBMFbRONY26htRxrKM6jdeHzgftyP3-4/preview',
+        company: 'Arbo Crossfit',
+      },
+      {
+        img: '/images/logo_crocodiles.jpg',
+        video: 'https://drive.google.com/file/d/148G6lfQKA22V1J3Ly-Ck30oiv0qwCIkq/preview',
+        company: 'Coritiba Crocodiles',
+      },
+      {
+        img: '/images/logo_choripan.jpg',
+        video: 'https://drive.google.com/file/d/1xmmfg_4-YmpczuKSEKTM9Ma1U3yZijxF/preview',
+        company: 'Choripan',
+      },
+      {
+        img: '/images/logo_3R.jpg',
+        video: 'https://drive.google.com/file/d/1C5Ahk73pDvcakLjFN0rLLHyOqvYyMEcm/preview',
+        company: '3R',
+      },
+      {
+        img: '/images/logo_instituto_voce.jpg',
+        video: 'https://drive.google.com/file/d/1LkIX5pzO5PAm6DJHa5n0--6ba1JFcsKv/preview',
+        company: 'Instituto Você',
+      },
+      {
+        img: '/images/logo_coldkillers.jpg',
+        video: 'https://drive.google.com/file/d/1GfBXvyf6BgsWXTESvtafGgmnX8-j3Rjd/preview',
+        company: 'Cold Killers',
+      },
+      {
+        img: '/images/logo_fanny.jpg',
+        video: 'https://drive.google.com/file/d/1-64L36SvXhYx4B--5MI4SXrQVaszeEG-/preview',
+        company: 'Fanny 24h',
+      },
+      {
+        img: '/images/logo_americantopteam.jpg',
+        video: 'https://drive.google.com/file/d/1vHisnBCvNohNIlfNsqPI0-MJzVRCtBxy/preview',
+        company: 'American Top Team',
+      }
+    ],
   },
   review: {
     title: 'Veja o que nossos clientes acharam',
@@ -108,7 +117,7 @@ export const Texts: TextsType = {
         img: '/images/depositionAmalia.jpg',
         video: 'https://www.youtube.com/embed/ZbxS9WySObg',
         name: 'Amália',
-        profissao: 'Senadora de Curitiba',
+        profissao: 'Vereadora de Curitiba',
       },
       {
         img: '/images/depositionPri.jpg',
@@ -170,7 +179,7 @@ export const Texts: TextsType = {
     {
       question: 'Posso contratar um dos serviços separadamente?',
       answer:
-        'Claro. Nós disponibilizamos 3 principais serviços que também podem ser prestados separadamente como: roteirização, para criação de conteúdos que realmente engajam; captação de imagem e som em alta qualidade; e edição de vídeos para mostrar a melhor experiência para o expectador.',
+        'Claro. Nós disponibilizamos serviços separadamente de captação de imagem e som em alta qualidade, edição de vídeos ou mesmo uma produção completa desde a idealização do projeto.',
     },
     {
       question: 'Quanto tempo leva para o vídeo ficar pronto?',

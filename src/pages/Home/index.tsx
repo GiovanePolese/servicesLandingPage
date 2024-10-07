@@ -6,6 +6,7 @@ import { defaultTheme } from '../../styles/theme'
 import { SectionIntroduction } from '../../components/SectionIntroduction'
 import { SectionServices } from '../../components/SectionServices'
 import { SectionDepositions } from '../../components/SectionDepositions'
+import { SectionPortifolio } from '../../components/SectionPortifolio'
 import { SectionFaq } from '../../components/SectionFaq'
 
 import { SideMenuContextProvider } from '../../contexts/SideMenuContext'
@@ -29,11 +30,16 @@ export const Home = () => {
         <Header />
         <SideMenu />
       </SideMenuContextProvider>
-      <WhatsappIcon/>
+      <WhatsappIcon />
       <S.Sections>
         <SectionIntroduction />
-        {modalsContextIsOpen && <ModalForm />}
+        {modalsContextIsOpen ?
+          <ModalForm />
+          :
+          ''
+        }
         <SectionServices />
+        <SectionPortifolio />
         <SectionDepositions />
         <SectionFaq />
         <Footer />

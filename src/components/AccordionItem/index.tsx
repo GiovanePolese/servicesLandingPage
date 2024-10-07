@@ -1,5 +1,5 @@
 import { MouseEventHandler } from 'react'
-import { FaqType } from '../Texts'
+import { FaqType } from '../TextsTypes'
 
 type AccordionItemProps = {
   showDescription: string
