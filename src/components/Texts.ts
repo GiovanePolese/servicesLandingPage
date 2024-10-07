@@ -32,7 +32,7 @@ export const Texts: TextsType = {
   },
   services: {
     title: 'Nossos serviços',
-    subtitle: 'Conheça um pouco mais sobre o nosso trabalho',
+    subtitle: 'Descubra os serviços que nossa equipe oferece para produzir o vídeo ideal para seu negócio',
     icons: [
       {
         id: 'captureButton',
@@ -55,7 +55,7 @@ export const Texts: TextsType = {
         img: '/images/claquete.svg',
         name: 'Produção de vídeos',
         description:
-          'Produção completa de materiais audiovisuais para campanhas, websites e redes sociais, deixando seu produto mais atrativo e com maior profissionalismo.',
+          'Produção completa de materiais audiovisuais para campanhas, websites, Reels e redes sociais, deixando seu produto mais atrativo e com maior profissionalismo.',
         cta: 'Quero minha produção',
       },
     ],
@@ -64,7 +64,7 @@ export const Texts: TextsType = {
   },
   portfolio: {
     title: 'Conheça nossos trabalhos',
-    subtitle: 'Confira nossos vídeos produzidos para alguns de nossos clientes',
+    subtitle: 'Confira alguns dos vídeos produzidos para nossos clientes',
     cards: [
       {
         img: '/images/logo_arbo.jpg',
@@ -84,7 +84,7 @@ export const Texts: TextsType = {
       {
         img: '/images/logo_3R.jpg',
         video: 'https://drive.google.com/file/d/1C5Ahk73pDvcakLjFN0rLLHyOqvYyMEcm/preview',
-        company: '3R',
+        company: '3R Embalagens',
       },
       {
         img: '/images/logo_instituto_voce.jpg',
@@ -174,7 +174,7 @@ export const Texts: TextsType = {
     {
       question: 'Como ter meu vídeo profissional?',
       answer:
-        'Basta clicar em qualquer um dos botões da página e preencher o formulário para que nossa equipe entre em contato o quanto antes para montar seu orçamento sem compromisso.',
+        'Basta clicar em qualquer um dos botões da página e preencher o formulário para que nossa equipe entre em contato o quanto antes para montar seu orçamento sem compromisso. Ou entre em contato pelas nossas redes.',
     },
     {
       question: 'Posso contratar um dos serviços separadamente?',
@@ -184,7 +184,12 @@ export const Texts: TextsType = {
     {
       question: 'Quanto tempo leva para o vídeo ficar pronto?',
       answer:
-        'O tempo pode variar de acordo com suas necessidades e a complexidade do seu vídeo. O período médio de entrega após as gravações varia de 3 a 10 dias.',
+        'O tempo pode variar de acordo com suas necessidades e a complexidade do seu vídeo. O período médio de entrega após as gravações varia de 2 a 10 dias.',
+    },
+    {
+      question: 'Em qual local vocês gravam?',
+      answer:
+        'Nossa equipe está localizada atualmente em Curitiba e Região. Nos deslocamos até o local necessário para gravações, seja na sua loja, um estúdio ou mesmo gravações externas. Para outras cidades há um adicional de transporte até o local necessário, atendemos todo o Brasil.',
     },
     {
       question: 'Como recebo os vídeos?',
