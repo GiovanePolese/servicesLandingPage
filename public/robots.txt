@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /cadastro-concluido
+
+Sitemap: https://www.poleseaudiovisual.com.br/sitemap.xml
