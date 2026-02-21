@@ -15,13 +15,13 @@ export const SectionIntroduction = () => {
           <img src="/images/ondas.svg" alt="Ondas azuis" />
         </S.ImageHeader>
 
-        <iframe
-          src="https://www.youtube.com/embed/WSazF_JWI4A?si=Mr-iLxPNWBd_eXJX"
-          title="YouTube video player"
+        <iframe 
+          src="https://player.vimeo.com/video/1032893382?h=49e11b8b48&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+          title="Polese Audiovisual"
         ></iframe>
+        
         <S.Main>
           <h1 dangerouslySetInnerHTML={{ __html: titulo }}></h1>
           <p dangerouslySetInnerHTML={{ __html: Texts.introduction.subtitle}}></p>

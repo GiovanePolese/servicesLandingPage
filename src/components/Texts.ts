@@ -25,9 +25,9 @@ export const Texts: TextsType = {
   ],
   introduction: {
     title:
-      '<strong>ESPECIALISTAS</strong> EM PRODUÇÃO<br/>DE VÍDEOS <strong>VERTICAIS</strong>',
+      '<strong>MAXIMIZE</strong> SUA PRESENÇA<br/>NAS<strong> REDES SOCIAIS</strong>',
     subtitle:
-      'Tenha mais conversões e mais engajamento com vídeos<br/>e anúncios que realmente trazem resultados',
+      'Tenha mais conversões e mais engajamento com <strong>vídeos</strong><br/>e criativos que realmente trazem resultados',
     button: 'Quero impulsionar meu negócio.',
   },
   services: {
@@ -78,13 +78,8 @@ export const Texts: TextsType = {
       },
       {
         img: '/images/logo_choripan.jpg',
-        video: 'https://drive.google.com/file/d/1xmmfg_4-YmpczuKSEKTM9Ma1U3yZijxF/preview',
+        video: 'https://drive.google.com/file/d/1eItrTAQRJThiuSaYrdcE7DMLjKoc7zy6/preview',
         company: 'Choripan',
-      },
-      {
-        img: '/images/logo_3R.jpg',
-        video: 'https://drive.google.com/file/d/1C5Ahk73pDvcakLjFN0rLLHyOqvYyMEcm/preview',
-        company: '3R Embalagens',
       },
       {
         img: '/images/logo_instituto_voce.jpg',
@@ -92,9 +87,24 @@ export const Texts: TextsType = {
         company: 'Instituto Você',
       },
       {
+        img: '/images/logo_3R.jpg',
+        video: 'https://drive.google.com/file/d/1C5Ahk73pDvcakLjFN0rLLHyOqvYyMEcm/preview',
+        company: '3R Embalagens',
+      },
+      {
         img: '/images/logo_coldkillers.jpg',
         video: 'https://drive.google.com/file/d/1GfBXvyf6BgsWXTESvtafGgmnX8-j3Rjd/preview',
         company: 'Cold Killers',
+      },
+      {
+        img: '/images/logo_gala.jpg',
+        video: 'https://drive.google.com/file/d/1sQF_ekyRmJ3DKW5DZ0cp3n4fLSfNtRtt/preview',
+        company: 'Gála Iogurte',
+      },
+      {
+        img: '/images/logo_fortt_seguros.jpg',
+        video: 'https://drive.google.com/file/d/1P-loQVS8tFuRiWK7Arq_pzsKkL8mGf-a/preview',
+        company: 'Fortt Seguros',
       },
       {
         img: '/images/logo_fanny.jpg',
@@ -182,14 +192,9 @@ export const Texts: TextsType = {
         'Claro. Nós disponibilizamos serviços separadamente de captação de imagem e som em alta qualidade, edição de vídeos ou mesmo uma produção completa desde a idealização do projeto.',
     },
     {
-      question: 'Quanto tempo leva para o vídeo ficar pronto?',
-      answer:
-        'O tempo pode variar de acordo com suas necessidades e a complexidade do seu vídeo. O período médio de entrega após as gravações varia de 2 a 10 dias.',
-    },
-    {
       question: 'Em qual local vocês gravam?',
       answer:
-        'Nossa equipe está localizada atualmente em Curitiba e Região. Nos deslocamos até o local necessário para gravações, seja na sua loja, um estúdio ou mesmo gravações externas. Para outras cidades há um adicional de transporte até o local necessário, atendemos todo o Brasil.',
+        'Nossa equipe está localizada atualmente em Curitiba e Região. Nos deslocamos até o local necessário para gravações, seja na sua loja, um estúdio ou mesmo gravações externas. Para outras cidades há um adicional de transporte até o local, atendemos todo o Brasil.',
     },
     {
       question: 'Como recebo os vídeos?',

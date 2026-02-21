@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.section`
   width: 100%;
   background-color: #0b0d17;
-  padding-top: 95px;
+  padding-top: 75px;
   display: flex;
   justify-content: center;
   padding-bottom: 60px;
@@ -35,6 +35,12 @@ export const Wrapper = styled.section`
 
   @media (max-width: 768px) {
     padding-top: 80px;
+  }
+
+  @media (min-width: 1900px) {
+    .container {
+      width: 65%;
+    }
   }
 `
 

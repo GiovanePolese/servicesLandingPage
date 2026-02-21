@@ -8,17 +8,17 @@ export const Icon = styled.div`
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: green;
-  width: 60px;
-  height: 60px;
+  background-color: #25D366;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   transition: all .2s ease-in-out;
   opacity: 0.97;
   z-index: 999;
 
   img {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     filter: brightness(0) invert(1);
     padding-bottom: 2px;
   }
