@@ -27,8 +27,8 @@
     "@types/react-burger-menu": "^2.8.7",
     "@types/react-dom": "latest",
     "@types/styled-components": "^5.1.26",
-    "eslint": "^8.35.0",
+    "eslint": "^10.0.2",
     "eslint-config-next": "latest",
-    "typescript": "^4.9.3"
+    "typescript": "^5.9.3"
   }
 }
