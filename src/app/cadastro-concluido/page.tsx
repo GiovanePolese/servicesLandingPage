@@ -1,6 +1,6 @@
 'use client'
 
-import { RegisterDone } from '../../pages/RegisterDone'
+import { RegisterDone } from '../../views/RegisterDone'
 
 export default function RegisterDonePage() {
   return <RegisterDone />
