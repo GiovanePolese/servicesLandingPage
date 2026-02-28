@@ -47,3 +47,5 @@ export const Home = () => {
     </ThemeProvider>
   )
 }
+
+export default Home

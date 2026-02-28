@@ -1,6 +1,6 @@
 'use client'
 
-import { Home } from '../pages/Home'
+import { Home } from '../views/Home'
 import { ModalsContextProvider } from '../contexts/ModalsContext'
 
 export default function HomePage() {
