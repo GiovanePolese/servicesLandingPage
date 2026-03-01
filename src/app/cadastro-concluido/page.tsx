@@ -1,7 +1,24 @@
 'use client'
 
-import { RegisterDone } from '../../pages/RegisterDone'
+import GlobalStyle from '../../styles/global'
 
-export default function RegisterDonePage() {
-  return <RegisterDone />
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from '../../styles/theme'
+
+import * as S from './styles'
+
+import { SectionRegisterDone } from '../../components/SectionRegisterDone'
+
+import { WhatsappIcon } from '../../components/WhatsappIcon'
+
+export default function RegisterDone() {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <WhatsappIcon/>
+      <S.Sections>
+        <SectionRegisterDone/>
+      </S.Sections>
+    </ThemeProvider>
+  )
 }

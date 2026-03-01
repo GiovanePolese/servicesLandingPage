@@ -18,7 +18,7 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "latest",
     "styled-components": "^5.3.6",
-    "swiper": "^9.0.5"
+    "swiper": "^12.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.5",

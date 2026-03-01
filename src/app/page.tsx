@@ -1,12 +1,51 @@
 'use client'
 
-import { Home } from '../pages/Home'
-import { ModalsContextProvider } from '../contexts/ModalsContext'
+import GlobalStyle from '../styles/global'
 
-export default function HomePage() {
+import { ThemeProvider } from 'styled-components'
+import { defaultTheme } from '../styles/theme'
+
+import { SectionIntroduction } from '../components/SectionIntroduction'
+import { SectionServices } from '../components/SectionServices'
+import { SectionDepositions } from '../components/SectionDepositions'
+import { SectionPortifolio } from '../components/SectionPortifolio'
+import { SectionFaq } from '../components/SectionFaq'
+
+import { SideMenuContextProvider } from '../contexts/SideMenuContext'
+
+import * as S from './styles'
+import { Header } from '../components/Header'
+import { SideMenu } from '../components/SideMenu'
+import { ModalForm } from '../components/ModalForm'
+import { ModalsContext } from '../contexts/ModalsContext'
+import { useContext } from 'react'
+import { Footer } from '../components/Footer'
+import { WhatsappIcon } from '../components/WhatsappIcon'
+
+export default function Home() {
+  const { modalsContextIsOpen } = useContext(ModalsContext)
+
   return (
-    <ModalsContextProvider>
-      <Home />
-    </ModalsContextProvider>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <SideMenuContextProvider>
+        <Header />
+        <SideMenu />
+      </SideMenuContextProvider>
+      <WhatsappIcon />
+      <S.Sections>
+        <SectionIntroduction />
+        {modalsContextIsOpen ?
+          <ModalForm />
+          :
+          ''
+        }
+        <SectionServices />
+        <SectionPortifolio />
+        <SectionDepositions />
+        <SectionFaq />
+        <Footer />
+      </S.Sections>
+    </ThemeProvider>
   )
 }
